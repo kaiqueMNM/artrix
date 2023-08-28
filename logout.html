@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logout</title>
+  <link rel="stylesheet" type="text/css" href="stilo.css">
+  </head>
+  <script>
+    window.onload = function() {
+      history.pushState(null, null, location.href);
+      window.onpopstate = function() {
+        history.go(1);
+      };
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Logout</h1>
+    <p class="logout-message">Infelizmente, você foi deslogado.</p>
+    <a href="index.html" class="login-button">Faça login novamente</a>
+  </div>
+
+  <footer>
+    <a href="https://github.com/seu-perfil" class="footer-links">
+      <img src="https://daily-dev-tips.com/ezoimgfmt/cdn.hashnode.com/res/hashnode/image/upload/v1654845767617/RuHOJDaVPJ.png?ezimgfmt=rs:560x560/rscb2/ng:webp/ngcb2" alt="GitHub" class="footer-logo">
+    </a>
+    <a href="https://instagram.com/seu-perfil" class="footer-links">
+      <img src="https://daily-dev-tips.com/ezoimgfmt/cdn.hashnode.com/res/hashnode/image/upload/v1654670003399/aOsHknZja.png?ezimgfmt=ng%3Awebp%2Fngcb2%2Frs%3Adevice%2Frscb2-1" alt="Instagram" class="footer-logo">
+    </a>
+  </footer>
+</body>
+</html>
